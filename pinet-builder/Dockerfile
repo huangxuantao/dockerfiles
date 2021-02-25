@@ -1,9 +1,9 @@
 FROM centos:7
 
 LABEL createdBy="huangxuantao"
-LABEL goVersion="1.14.10"
+LABEL goVersion="1.16"
 
-ENV goPackage=go1.14.10.linux-amd64.tar.gz
+ENV goPackage=go1.16.linux-amd64.tar.gz
 ENV goUrl=https://gomirrors.org/dl/go/$goPackage
 
 ENV upxFolder=upx-3.96-amd64_linux
