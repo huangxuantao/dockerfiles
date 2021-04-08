@@ -1,11 +1,12 @@
 FROM centos:7
 
 LABEL createdBy="huangxuantao"
-LABEL nodeVersion="10.13.0"
+LABEL nodeVersion="v10.13.0"
 
-ENV nodeFolder=node-v$nodeVersion-linux-x64
+ENV nodeVersion="v10.13.0"
+ENV nodeFolder=node-$nodeVersion-linux-x64
 ENV nodePackage=$nodeFolder.tar.gz
-ENV nodeUrl=https://nodejs.org/dist/v$nodeVersion/&nodePackage
+ENV nodeUrl=https://nodejs.org/dist/$nodeVersion/$nodePackage
 
 WORKDIR /root/go
 
